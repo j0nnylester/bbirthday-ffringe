@@ -35,42 +35,47 @@ body[data-theme='dark'] {
 }
 
 header {
-  margin: 2%;                 
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  align-items: baseline;
 }
 
-#nav {
+h2, h4 {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+#days {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-evenly;
 }
 
-.date-tab {
-  margin: 0px 10px;
+.day-tab {
+  margin: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  border-bottom-color: inherit;
+  font-size: 1rem;
 }
 
-.date-tab[data-theme='light'] {
-  border-bottom-color: var(--white);
+.active.day-tab:nth-child(1){
+    border-bottom: 0.25rem solid var(--cyan);
 }
 
-.date-tab[data-theme='dark'] {
-  border-bottom-color: var(--black);
+.active.day-tab:nth-child(2){
+    border-bottom: 0.25rem solid var(--magenta);
 }
 
-.active.date-tab:nth-child(1){
-    border-bottom: 5px solid var(--cyan);
-}
-
-.active.date-tab:nth-child(2){
-    border-bottom: 5px solid var(--magenta);
-}
-
-.active.date-tab:nth-child(3){
-    border-bottom: 5px solid var(--yellow);
+.active.day-tab:nth-child(3){
+    border-bottom: 0.25rem solid var(--yellow);
 }
 
 .planner {
@@ -79,6 +84,7 @@ header {
 
 .planner.active {
   display: flex;
+  justify-content: center;
 }
 
 .schedule {
@@ -89,9 +95,23 @@ td, th {
   text-align: center;
 }
 
+#nav {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 @media screen and (max-width: 600px) {
   header {
     flex-direction: column;
     justify-content: center;
   }
+
+  h2, h4 {
+  margin: 0.5rem 1rem;
+}
 }
