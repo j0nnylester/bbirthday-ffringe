@@ -1,0 +1,15 @@
+[build]
+  base = ""
+  publish = "/"
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; style-src 'unsafe-inline'"
+    Expect-CT = "enforce; max-age=3600"
+    Feature-Policy = "geolocation 'none'; notifications 'none'; microphone 'none'; camera 'none'; payment 'none'"
+    Referrer-Policy = "strict-origin"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    X-XSS-Protection = "1; mode=block"
