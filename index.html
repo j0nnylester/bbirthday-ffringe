@@ -12,12 +12,60 @@
     <h2>bbirthday ffringe</h2>
     <nav>
       <ul id="nav">
-        <li class="date-tab">Friday 13th</li>
-        <li class="date-tab">Saturday 14th</li>
-        <li class="date-tab">Sunday 15th</li>
+        <li id="friday-tab" class="date-tab active" onclick="setActive('friday')">Friday 13th</li>
+        <li id="saturday-tab" class="date-tab" onclick="setActive('saturday')"">Saturday 14th</li>
+        <li id="sunday-tab" class="date-tab" onclick="setActive('sunday')"">Sunday 15th</li>
       </ul>
     </nav>
   </header>
-
+  <section id="friday-planner" class="planner active">
+    <table class="schedule">
+      <tr>
+        <th>Time</th>
+        <th>Event</th>
+      </tr>
+      <tr>
+        <td>20:00</td>
+        <td>Jonny</td>
+      </tr>
+      <tr>
+        <td>20:15</td>
+        <td>Louise</td>
+      </tr>
+    </table>
+  </section>
+  <section id="saturday-planner" class="planner">
+    <table class="schedule">
+      <tr>
+        <th>Time</th>
+        <th>Event</th>
+      </tr>
+      <tr>
+        <td>20:00</td>
+        <td>Becky</td>
+      </tr>
+      <tr>
+        <td>20:15</td>
+        <td>Steve</td>
+      </tr>
+    </table>
+  </section>
+  <section id="sunday-planner" class="planner">`
+    <table class="schedule">
+      <tr>
+        <th>Time</th>
+        <th>Event</th>
+      </tr>
+      <tr>
+        <td>20:00</td>
+        <td>Haku</td>
+      </tr>
+      <tr>
+        <td>20:15</td>
+        <td>Hunter</td>
+      </tr>
+    </table>
+  </section>
+  <script src="index.js"></script>
 </body>
 </html>
