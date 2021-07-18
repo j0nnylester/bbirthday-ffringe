@@ -111,10 +111,9 @@ td, th {
   justify-content: space-evenly;
 }
 
-.nav-link {
+a {
   margin: 0.5rem;
   cursor: pointer;
-  text-decoration: none;
   color: inherit;
   background-color: inherit;
 }
