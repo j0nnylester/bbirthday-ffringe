@@ -114,8 +114,9 @@ tr:nth-child(even) {
 }
 
 #nav {
-  position: absolute;
+  position: relative;
   width: 100vw;
+  height: 4rem;
   bottom: 0;
   display: flex;
   flex-direction: row;
