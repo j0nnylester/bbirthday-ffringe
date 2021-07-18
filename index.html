@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +7,17 @@
   <link href="./index.css" rel="stylesheet" type="text/css">
   <title>bbirthday ffringe</title>
 </head>
-
 <body>
   <header>
-    <h2>bbirthday ffringe</h2>
-    <h4>what's on</h2>
+    <h1><span id="title-cyan">bbirthda</span>y <span id="title-magenta">ffrin</span>g<span id="title-yellow">e</span></h1>
+    <h3>what's on</h3 >
       <button type="button" id="theme-button" onclick="changeTheme()"></button>
   </header>
   <section id="days">
-    <button type="button" id="friday-tab" class="day-tab" onclick="setActive('friday')">Friday 13th</button>
-    <button type="button" id="saturday-tab" class="day-tab" onclick="setActive('saturday')">Saturday
+    <button type="button" id="friday-tab" class="day-tab" onclick="setActive(0)">Friday 13th</button>
+    <button type="button" id="saturday-tab" class="day-tab" onclick="setActive(1)">Saturday
       14th</button>
-    <button type="button" id="sunday-tab" class="day-tab" onclick="setActive('sunday')">Sunday 15th</button>
+    <button type="button" id="sunday-tab" class="day-tab" onclick="setActive(2)">Sunday 15th</button>
   </section>
   <section id="friday-whatson" class="whatson">
     <table class="schedule">
