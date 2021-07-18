@@ -1,82 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./index.css" rel="stylesheet" type="text/css">
+  <link href="./index.css" rel="stylesheet" type="text/css">
   <title>bbirthday ffringe</title>
 </head>
+
 <body>
   <header>
-      <h2>bbirthday ffringe</h2>
-      <h4>what's on</h2>
+    <h2>bbirthday ffringe</h2>
+    <h4>what's on</h2>
       <button type="button" id="theme-button" onclick="changeTheme()"></button>
   </header>
   <section id="days">
-    <button type="button" id="friday-tab" class="day-tab active" onclick="setActive('friday')">Friday 13th</button>
-    <button type="button" id="saturday-tab" class="day-tab" onclick="setActive('saturday')">Saturday 14th</button>
+    <button type="button" id="friday-tab" class="day-tab" onclick="setActive('friday')">Friday 13th</button>
+    <button type="button" id="saturday-tab" class="day-tab" onclick="setActive('saturday')">Saturday
+      14th</button>
     <button type="button" id="sunday-tab" class="day-tab" onclick="setActive('sunday')">Sunday 15th</button>
-  </section>  
-  <section id="friday-whatson" class="whatson active">
+  </section>
+  <section id="friday-whatson" class="whatson">
     <table class="schedule">
       <tr>
-        <th>Time</th>
-        <th>Event</th>
+        <th>when and where</th>
+        <th>what</th>
       </tr>
       <tr>
-        <td rowspan="1">20:00</td>
-        <td>Jonny</td>
+        <td>
+          <div class="tcell">
+            <time>20:00</time>
+            <p>venue tbc</p>
+          </div>
+        </td>
+        <td>
+          <div class="tcell">
+            <a href="https://www.netflix.com/gb/title/81334750" target="_blank">
+              Fear Street Part 3: 1666</a>
+            <p>Thrust back to 1666, Deena learns the truth about Sarah Fier. Back in 1994, the friends fight for their lives — and
+            Shadyside’s future.
+            </p>
+          </div>
+        </td>
       </tr>
       <tr>
-        <td rowspan="1">20:15</td>
-        <td>Louise</td>
+        <td>
+          <div class="tcell">
+            <time>20:00</time>
+            <p>venue tbc</p>
+          </div>
+        </td>
+        <td>
+          <div class="tcell">
+            <a href="https://www.netflix.com/gb/title/81289483" target="_blank">Bo Burnham - Inside</a>
+            <p>A musical comedy special shot and performed by Bo Burnham, alone, over the course of a very unusual year.</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="tcell">
+            <time>20:30 (tbc)</time>
+            <p>Cineworld Sheffield, Valley Centertainment, Broughton Ln, Sheffield S9 2EP</p>
+          </div>
+        </td>
+        <td>
+          <div class="tcell">
+            <a href="https://www.cineworld.co.uk/films/free-guy/ho00007601" target="_blank">Free Guy</a>
+            <p>A bank teller discovers that he's actually an NPC inside a brutal, open world video game.</p>
+          </div>
+        </td>
       </tr>
     </table>
   </section>
   <section id="saturday-whatson" class="whatson">
     <table class="schedule">
       <tr>
-        <th>Time</th>
-        <th>Event</th>
+        <th>when and where</th>
+        <th>what</th>
       </tr>
       <tr>
-        <td rowspan="1">20:00</td>
-        <td>Becky</td>
+        <td>
+          <div class="tcell">
+            <time>14:00</time>
+            <p>Yorkshire Sculpture Park, West Bretton, Wakeﬁeld, WF4 4LG</p>
+          </div>
+        </td>
+        <td>
+          <div class="tcell">
+            <a href="https://ysp.org.uk/"
+              target="_blank">
+              Yorkshire Sculpture Park</a>
+            <p>Yorkshire Sculpture Park is the leading international centre for modern and contemporary sculpture
+              which celebrated its 40th anniversary in 2017.
+            </p>
+          </div>
+        </td>
       </tr>
       <tr>
-        <td rowspan="1">20:15</td>
-        <td>Steve</td>
-      </tr>
-      <tr>
-        <td rowspan="1">20:30</td>
-        <td><a href="https://www.sheffieldcityhall.co.uk/event/last-laugh-comedy-club-14-august-2021" target="_blank">Last Laugh Comedy</a></td>
-        <td>Doors open at 19:00</td>
+        <td>
+          <div class="tcell">
+            <time>20:30</time>
+            <p>City Hall, Memorial Hall, Sheffield</p>
+          </div>
+        </td>
+        <td>
+          <div class="tcell">
+            <a href="https://www.sheffieldcityhall.co.uk/event/last-laugh-comedy-club-14-august-2021"
+              target="_blank">Last Laugh Comedy</a>
+            <p>Join us at Yorkshire’s best Comedy Club Experience, in the amazing Sheffield City Hall. Lineup TBC</p>
+          </div>
+        </td>
       </tr>
     </table>
   </section>
   <section id="sunday-whatson" class="whatson">
     <table class="schedule">
       <tr>
-        <th>Time</th>
-        <th>Event</th>
-      <tr>
-        <td rowspan="1">11:15</td>
-        <td>25 Chemistry Experiments in 15 Minutes</td>
-        <td>Are you ready to fasten your seatbelts and enjoy the ‘explosive’ journey?</td>
-      </tr>
+        <th>when and where</th>
+        <th>what</th>
       </tr>
       <tr>
-        <td rowspan="1">15:00</td>
-        <td>Taxi home</td>
+        <td>
+          <div class="tcell">
+            <time>14:00</time>
+            <p>venue tbc</p>
+          </div>
+        </td>
+        <td>
+          <div class="tcell">
+            <a href="https://youtu.be/bOuEJf8Dr_4" target="_blank">
+              25 Chemistry Experiments in 15 Minutes</a>
+            <p>Whacky colour changes, magic disappearing water, blowing up dustbins, clouds of steam, thunder air explosions.
+              Are you ready to fasten your seatbelts and enjoy the ‘explosive’ journey?
+            </p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="tcell">
+            <time>14:30</time>
+            <p>venue tbc</p>
+          </div>
+        </td>
+        <td>
+          <div class="tcell">
+            <a href=""></a>
+            <p>Closing events and goodbyes</p>
+          </div>
+        </td>
       </tr>
     </table>
   </section>
   <nav id="nav">
     <a class="nav-link" href="index.html">what's on</a>
     <a class="nav-link" href="venues.html">venues</a>
+    <a class="nav-link" href="food.html">food</a>
     <a class="nav-link" href="about.html">about</a>
   </nav>
   <script src="index.js"></script>
 </body>
+
 </html>
