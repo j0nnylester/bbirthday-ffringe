@@ -44,9 +44,13 @@ h2, h4 {
   margin-left: 1rem;
 }
 
-.nav-link {
-  margin: 0.5rem;
-  cursor: pointer;
+#theme-button {
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
 }
 
 #days {
@@ -61,6 +65,7 @@ h2, h4 {
   margin: 0.5rem;
   cursor: pointer;
   border: none;
+  color: inherit;
   background-color: inherit;
   border-bottom-color: inherit;
   font-size: 1rem;
@@ -78,17 +83,18 @@ h2, h4 {
     border-bottom: 0.25rem solid var(--yellow);
 }
 
-.planner {
+.whatson {
   display: none;
 }
 
-.planner.active {
+.whatson.active {
   display: flex;
   justify-content: center;
 }
 
 .schedule {
-  width: 90%;
+  table-layout: fixed;
+  width: 100%;
 }
 
 td, th {
@@ -105,6 +111,14 @@ td, th {
   justify-content: space-evenly;
 }
 
+.nav-link {
+  margin: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+
 @media screen and (max-width: 600px) {
   header {
     flex-direction: column;
@@ -112,6 +126,10 @@ td, th {
   }
 
   h2, h4 {
-  margin: 0.5rem 1rem;
-}
+    margin: 0.5rem 1rem;
+  }
+
+  #theme-button {
+    top: 1rem;
+  }
 }
