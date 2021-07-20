@@ -38,8 +38,12 @@ header {
   align-items: baseline;
 }
 
-h1, h3 {
+h1, h2 {
   margin-left: 1rem;
+}
+
+h1 > a {
+  text-decoration: none;
 }
 
 #title-cyan {
@@ -147,6 +151,10 @@ a {
   cursor: pointer;
   color: inherit;
   background-color: inherit;
+}
+
+#about {
+  margin: 0 4em;
 }
 
 @media screen and (max-width: 600px) {
