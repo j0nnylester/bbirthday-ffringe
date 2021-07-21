@@ -20,6 +20,7 @@ const setTheme = () => {
     body.setAttribute('data-theme', 'light');
     themeButton.textContent = 'dark'
   }
+  body.style.transition = 'background-color 0.2s linear'
 }
 
 const days = [
