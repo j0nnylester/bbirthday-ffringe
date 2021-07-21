@@ -3,14 +3,20 @@
   "name": "bbirthday ffringe",
   "icons": [
     {
-      "src": "./bbff_big.png",
+      "src": "./bbff_512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "./bbff.png",
+      "src": "./bbff_128.png",
       "type": "image/png",
       "sizes": "128x128"
+    },
+    {
+      "src": "./bbff_mask.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "start_url": ".",

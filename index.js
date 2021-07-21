@@ -56,3 +56,5 @@ const changeActive = (day) => {
   document.querySelector(`#${days[day].day}-tab`).classList.add("active");
   document.querySelector(`#${days[day].day}-whatson`).classList.add("active");
 };
+
+window.addEventListener('beforeinstallprompt', (event) => {});
