@@ -1,3 +1,4 @@
+const cacheName = 'bbff_2021_07'
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(cacheName).then(function (cache) {
