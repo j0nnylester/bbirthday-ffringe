@@ -13,7 +13,7 @@ body, html {
 
 body {
   margin: 0 auto;
-  padding: 0 0 5% 0;
+  padding: 0;
   font-family: 'Dosis', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,6 +37,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  background-color: inherit;
+  color: inherit;
 }
 
 h1, h2 {
@@ -45,6 +47,7 @@ h1, h2 {
 
 h1 > a {
   text-decoration: none;
+  margin: 0;
 }
 
 #title-cyan {
@@ -80,6 +83,8 @@ h1 > a {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  background-color: inherit;
+  color: inherit;
 }
 
 .day-tab {
@@ -101,6 +106,7 @@ h1 > a {
 }
 
 .whatson.active {
+  margin-top: 0.5rem;
   display: flex;
   justify-content: center;
 }
@@ -136,17 +142,6 @@ tr:nth-child(even) {
   text-align: left;
 }
 
-#nav {
-  position: relative;
-  width: 100vw;
-  height: 4rem;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 a {
   margin: 0.5rem;
   cursor: pointer;
@@ -156,6 +151,18 @@ a {
 
 #about {
   margin: 0 4em;
+}
+
+#nav {
+  width: 100vw;
+  height: 4rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: inherit;
+  color: inherit;
 }
 
 @media screen and (max-width: 600px) {
@@ -175,5 +182,11 @@ a {
 
   .schedule {
     width: 100%;
+    height: min-content;
+  }
+
+  .whatson {
+    height: 74vh;
+    overflow-x: scroll;
   }
 }
