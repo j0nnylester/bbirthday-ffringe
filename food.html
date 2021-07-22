@@ -5,32 +5,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./manifest.json" rel="manifest">
   <link rel="icon" type="image/png" href="./bbff_128.png" />
   <link rel="apple-touch-icon" href="./bbff_512.png" />
   <link href="./index.css" rel="stylesheet" type="text/css">
-  <meta name="description" content="food at bbirthday ffringe">
+  <meta name="description" content="what's on at bbirthday ffringe">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f5f5">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0a0a0a">
   <title>bbirthday ffringe</title>
 </head>
 
 <body>
   <header>
-    <h1>
-      <a class="nav-link" href="whatson.html">
-        <span id="title-cyan">bbirthda</span>y <span id="title-magenta">ffrin</span>g<span id="title-yellow">e</span>
-      </a>
-    </h1>
-    <h2>food</h2>
+    <div id="header">
+      <h1>
+        <a class="nav-link" href="whatson.html">
+          <span id="title-cyan">bbirthda</span>y <span id="title-magenta">ffrin</span>g<span id="title-yellow">e</span>
+        </a>
+      </h1>
+      <h2>food</h2>
+    </div>
     <button type="button" id="theme-button" onclick="changeTheme()"></button>
   </header>
-  <!-- ADD STUFF HERE -->
-  <nav id="nav">
-    <a class="nav-link" href="whatson.html">what's on</a>
-    <a class="nav-link" href="venues.html">venues</a>
-    <a class="nav-link" href="food.html">food</a>
-    <a class="nav-link" href="about.html">about</a>
-  </nav>
+
+  <main>
+    <ul>
+      <li>Jonny's "Still flammin' when I serve you" pizza</li>
+      <li>Louise's Late Morning brunch</li>
+      <li>Steve's Sausages</li>
+      <li>Hungry Hunter's Cafe</li>
+      <li>
+        The Treehouse Board Game Cafe
+        <a href="https://www.treehousesheffield.com/" target="_blank" rel="noreferrer">
+          https://www.treehousesheffield.com
+        </a>
+      </li>
+      <li>
+        Icarus and Apollo
+        <a href="https://icarusandapollo.wixsite.com/eats " target="_blank" rel="noreferrer">
+          https://icarusandapollo.wixsite.com/eats
+        </a>
+      </li>
+      <li>
+        Barrowboybar
+        <a href="https://www.barrowboybar.com/food" target="_blank" rel="noreferrer">
+          https://www.barrowboybar.com/food
+        </a>
+      </li>
+      <li>
+        Cutlery Works
+        <a href="https://cutleryworks.co.uk/cutlery-works-menu/" target="_blank" rel="noreferrer">
+          https://cutleryworks.co.uk/cutlery-works-menu/
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <nav id="pages">
+      <a class="nav-link" href="whatson.html">what's on</a>
+      <a class="nav-link" href="venues.html">venues</a>
+      <a class="nav-link" href="food.html">food</a>
+      <a class="nav-link" href="about.html">about</a>
+    </nav>
+  </footer>
   <script src="index.js"></script>
-  <script></script>
 </body>
 
 </html>

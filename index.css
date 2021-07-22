@@ -35,9 +35,6 @@ body[data-theme='dark'] {
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
   background-color: inherit;
   color: inherit;
 }
@@ -49,6 +46,65 @@ h1, h2 {
 h1 > a {
   text-decoration: none;
   margin: 0;
+}
+
+main {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  min-height: 33vh;
+
+}
+
+table {
+  table-layout: fixed;
+  width: 80%;
+}
+
+td, th {
+  text-align: left;
+  padding: 0 0.5rem;
+}
+
+tr:nth-child(even) {
+  background: rgba(var(--active), 0.1);
+}
+
+a {
+  margin: 0.5rem;
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+ul {
+  margin: 0 auto;
+  width: 66%;
+  list-style: none;
+  padding: 0 0.5rem;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+li > a {
+  margin: 0;
+}
+
+footer {
+  background-color: inherit;
+  color: inherit;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+  width: 100%;
+  top: 0;
 }
 
 #title-cyan {
@@ -79,13 +135,17 @@ h1 > a {
 }
 
 #days {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
   display: flex;
+  align-items: flex-start;
   justify-content: space-evenly;
   background-color: inherit;
   color: inherit;
+  position: relative;
+  top: 0rem;
+  width: 100%;
 }
 
 .day-tab {
@@ -112,20 +172,6 @@ h1 > a {
   justify-content: center;
 }
 
-.schedule {
-  table-layout: fixed;
-  width: 80%;
-}
-
-td, th {
-  text-align: left;
-  padding: 0 0.5rem;
-}
-
-tr:nth-child(even) {
-  background: rgba(var(--active), 0.1);
-}
-
 .tcell {
   display: flex;
   flex-direction: column;
@@ -143,51 +189,70 @@ tr:nth-child(even) {
   text-align: left;
 }
 
-a {
-  margin: 0.5rem;
-  cursor: pointer;
-  color: inherit;
-  background-color: inherit;
-}
+
 
 #about {
   margin: 0 4em;
 }
 
-#nav {
+#pages {
   width: 100vw;
   height: 4rem;
-  bottom: 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  position: relative;
   background-color: inherit;
   color: inherit;
 }
 
 @media screen and (max-width: 600px) {
-  header {
-    flex-direction: column;
-    justify-content: center;
-  }
-
   h1,
   h2 {
     margin: 0.5rem 1rem;
+  }
+
+  table {
+    width: 100%;
+    height: min-content;
+  }
+
+  main {
+    margin-top: 9rem;
+    margin-bottom: 4rem;
+  }
+
+  ul {
+    width: 100%;
+    height: min-content;
+  }
+
+  li {
+    margin: 1rem;
+  }
+
+  #header {
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
   }
 
   #theme-button {
     top: 1rem;
   }
 
-  .schedule {
-    width: 100%;
-    height: min-content;
+  #days {
+    position: fixed;
+    top: 6rem;
   }
 
-  .whatson {
-    height: 74vh;
-    overflow-x: scroll;
+  #about {
+    margin: 0 2em;
+  }
+
+  #pages {
+    position: fixed;
+    bottom: 0;
   }
 }
