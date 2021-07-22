@@ -12,17 +12,6 @@ const changeTheme = () => {
   }
 };
 
-const setTheme = () => {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    body.setAttribute('data-theme', 'dark');
-    themeButton.textContent = 'light'
-  } else {
-    body.setAttribute('data-theme', 'light');
-    themeButton.textContent = 'dark'
-  }
-  body.style.transition = 'background-color 0.2s linear'
-}
-
 const days = [
   {
     day: 'friday',
@@ -57,6 +46,15 @@ const changeActive = (day) => {
   document.querySelector(`#${days[day].day}-tab`).classList.add("active");
   document.querySelector(`#${days[day].day}-whatson`).classList.add("active");
 };
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  body.setAttribute('data-theme', 'dark');
+  themeButton.textContent = 'light'
+} else {
+  body.setAttribute('data-theme', 'light');
+  themeButton.textContent = 'dark'
+}
+body.style.transition = 'background-color 0.2s linear'
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
