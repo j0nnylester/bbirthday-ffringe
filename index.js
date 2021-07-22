@@ -4,9 +4,11 @@ const themeButton = document.querySelector('#theme-button');
 
 const changeTheme = () => {
   if (body.getAttribute('data-theme') === 'light') {
+    localStorage.setItem('theme', 'dark')
     body.setAttribute('data-theme', 'dark');
     themeButton.textContent = 'light'
   } else {
+    localStorage.setItem('theme', 'light')
     body.setAttribute('data-theme', 'light')
     themeButton.textContent = 'dark'
   }
@@ -47,7 +49,10 @@ const changeActive = (day) => {
   document.querySelector(`#${days[day].day}-whatson`).classList.add("active");
 };
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+if (
+  window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  || localStorage.getItem('theme') === 'dark'
+) {
   body.setAttribute('data-theme', 'dark');
   themeButton.textContent = 'light'
 } else {
