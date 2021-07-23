@@ -1,6 +1,7 @@
 :root {
     --black: #0a0a0a;
     --white: #f5f5f5;
+    --grey: #808080;
     --active: #f5f5f5;
     --transition: 0.0s;
 }
@@ -20,7 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   scroll-behavior: smooth;
-  background-color: #808080;
+  background-color: var(--grey);
   transition: background-color var(--transition) linear
 }
 
@@ -207,6 +208,17 @@ footer {
   position: relative;
   background-color: inherit;
   color: inherit;
+}
+
+#booked {
+  background-color: var(--grey);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  align-self: flex-end;
+  transform: rotateZ(-5deg);
 }
 
 @media screen and (max-width: 600px) {
