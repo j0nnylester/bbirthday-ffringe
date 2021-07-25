@@ -101,6 +101,7 @@ li > svg {
 
 li > a {
   margin: 0;
+  display: inline;
 }
 
 footer {
@@ -268,6 +269,10 @@ footer {
   ul {
     width: 100%;
     height: min-content;
+  }
+
+  li > a {
+    display: block;
   }
 
   #header {
