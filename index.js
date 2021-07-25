@@ -29,10 +29,16 @@ const updateTheme = (theme) => {
   body.setAttribute('data-theme', theme);
   themeButton.textContent = themes[theme];
 }
-const setActive = () => {
+
+const setActiveColor = () => {
   const today = new Date().setHours(0, 0, 0, 0);
   const closest = days.reduce((a, b) => Math.abs(new Date(a.date) - today) < Math.abs(new Date(b.date) - today) ? a : b);
   root.style.setProperty('--active', closest.color);
+  return closest;
+};
+
+const setActiveDay = () => {
+  const closest = setActiveColor();
   document.querySelector(`#${closest.day}-tab`).classList.add("active");
   document.querySelector(`#${closest.day}-whatson`).classList.add("active");
 };
@@ -74,5 +80,6 @@ const setServiceWorkerOnLoad = () => {
 };
 
 setThemeOnLoad();
+setActiveColor();
 setServiceWorkerOnLoad()
 
