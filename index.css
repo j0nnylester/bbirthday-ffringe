@@ -97,6 +97,7 @@ li {
 li > svg {
   margin-right: 1rem;
   fill: inherit;
+  min-width: 24px;
 }
 
 li > a {
@@ -222,6 +223,16 @@ footer {
   color: inherit;
 }
 
+#food-list:first-child {
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
+
+.food-link {
+  display: block;
+  word-break: break-word;
+}
+
 #booked {
   background-color: var(--grey);
   color: var(--white);
@@ -271,10 +282,6 @@ footer {
     height: min-content;
   }
 
-  li > a {
-    display: block;
-  }
-
   #header {
     flex-direction: column;
     justify-content: center;
@@ -301,6 +308,10 @@ footer {
   #pages {
     position: fixed;
     bottom: 0;
+  }
+
+  #food-list:first-child {
+    margin-top: -2rem;
   }
 
   .footer {
