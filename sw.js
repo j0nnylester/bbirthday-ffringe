@@ -10,9 +10,9 @@ self.addEventListener('install', function (event) {
           './bbff_mask.png',
           './food.html',
           './index.css',
-          './whatson.html',
           './index.js',
-          './venues.html'
+          './venues.html',
+          './whatson.html'
         ]
       );
     })
