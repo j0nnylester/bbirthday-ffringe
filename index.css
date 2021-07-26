@@ -274,11 +274,11 @@ footer {
 
   main {
     margin-top: 9rem;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
   }
 
   ul {
-    width: 100%;
+    width: 100%; 
     height: min-content;
   }
 
