@@ -1,7 +1,6 @@
 [build]
   base = ""
-  command = ""
-  publish = "/"
+  publish = "public/"
 
 [[headers]]
   for = "/*"
@@ -16,5 +15,5 @@
 
 [[redirects]]
   from = "/"
-  to = "/whatson.html"
+  to = "/whatson"
   status = 301
