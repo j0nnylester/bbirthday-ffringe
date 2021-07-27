@@ -19,7 +19,7 @@ const days = [
 const themes = {
   dark: 'light',
   light: 'dark'
-}
+};
 
 const root = document.querySelector(':root');
 const body = document.body;
@@ -67,6 +67,12 @@ const setThemeOnLoad = () => {
   root.style.setProperty('--transition', '0.2s');
 };
 
+const scrollForiOS = () => {
+  if (['iPad', 'iPhone'].includes(navigator.platform)) {
+    window.scrollTo(0, 1);
+  };
+};
+
 const setServiceWorkerOnLoad = () => {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
@@ -76,10 +82,11 @@ const setServiceWorkerOnLoad = () => {
         console.log('ServiceWorker registration failed: ', err);
       });
     });
-  }
+  };
 };
 
 setThemeOnLoad();
 setActiveColor();
+scrollForiOS();
 setServiceWorkerOnLoad()
 
