@@ -26,13 +26,15 @@ const body = document.body;
 const themeButton = document.querySelector('#theme-button');
 
 const updateTheme = (theme) => {
-  body.setAttribute('data-theme', theme);
+  body.setAttribute('color-scheme', theme);
   themeButton.textContent = themes[theme];
 }
 
+const absDateDiff = (fromDate, toDate) => Math.abs(new Date(fromDate) - toDate);
+
 const setActiveColor = () => {
   const today = new Date().setHours(0, 0, 0, 0);
-  const closest = days.reduce((a, b) => Math.abs(new Date(a.date) - today) < Math.abs(new Date(b.date) - today) ? a : b);
+  const closest = days.reduce((a, b) => absDateDiff(a.date, today) < absDateDiff(b.date, today) ? a : b);
   root.style.setProperty('--active', closest.color);
   return closest;
 };
@@ -44,8 +46,8 @@ const setActiveDay = () => {
 };
 
 const changeTheme = () => {
-  localStorage.setItem('theme', themes[body.getAttribute('data-theme')])
-  updateTheme(themes[body.getAttribute('data-theme')]);
+  localStorage.setItem('color-scheme', themes[body.getAttribute('color-scheme')])
+  updateTheme(themes[body.getAttribute('color-scheme')]);
 };
 
 const changeActive = (day) => {
@@ -57,8 +59,8 @@ const changeActive = (day) => {
 };
 
 const setThemeOnLoad = () => {
-  if ('theme' in localStorage) {
-    updateTheme(localStorage.getItem('theme'))
+  if ('color-scheme' in localStorage) {
+    updateTheme(localStorage.getItem('color-scheme'))
   } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     updateTheme('dark');
   } else {

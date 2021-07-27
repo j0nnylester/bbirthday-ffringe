@@ -25,14 +25,14 @@ body {
   transition: background-color var(--transition) linear
 }
 
-body[data-theme='light'] {
+body[color-scheme='light'] {
   background-color: var(--white);
   border-bottom-color: var(--white);
   color: var(--black);
   fill: var(--black);
 }
 
-body[data-theme='dark'] {
+body[color-scheme='dark'] {
   background-color: var(--black);
   border-bottom-color: var(--black);
   color: var(--white);
