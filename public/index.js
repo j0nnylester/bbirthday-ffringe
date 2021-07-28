@@ -25,7 +25,7 @@ const root = document.querySelector(':root');
 const body = document.body;
 const themeButton = document.querySelector('#theme-button');
 
-const updateTheme = (theme) => {
+const setTheme = (theme) => {
   body.setAttribute('color-scheme', theme);
   themeButton.textContent = themes[theme];
 }
@@ -47,7 +47,7 @@ const setActiveDay = () => {
 
 const changeTheme = () => {
   localStorage.setItem('color-scheme', themes[body.getAttribute('color-scheme')])
-  updateTheme(themes[body.getAttribute('color-scheme')]);
+  setTheme(themes[body.getAttribute('color-scheme')]);
 };
 
 const changeActive = (day) => {
@@ -60,19 +60,13 @@ const changeActive = (day) => {
 
 const setThemeOnLoad = () => {
   if ('color-scheme' in localStorage) {
-    updateTheme(localStorage.getItem('color-scheme'))
+    setTheme(localStorage.getItem('color-scheme'))
   } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    updateTheme('dark');
+    setTheme('dark');
   } else {
-    updateTheme('light');
+    setTheme('light');
   }
   root.style.setProperty('--transition', '0.2s');
-};
-
-const scrollForiOS = () => {
-  if (['iPad', 'iPhone'].includes(navigator.platform)) {
-    window.scrollTo(0, 1);
-  };
 };
 
 const setServiceWorkerOnLoad = () => {
@@ -89,6 +83,5 @@ const setServiceWorkerOnLoad = () => {
 
 setThemeOnLoad();
 setActiveColor();
-scrollForiOS();
 setServiceWorkerOnLoad()
 

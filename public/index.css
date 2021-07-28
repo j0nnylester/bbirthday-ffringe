@@ -96,8 +96,7 @@ li {
 }
 
 li > svg,
-li > a > svg,
-li > button > svg {
+li > a > svg {
   margin-right: 1rem;
   fill: inherit;
   min-width: 24px;
@@ -244,20 +243,6 @@ footer {
   width: 100%;
 }
 
-#our-venues-button {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
-  border: none;
-  color: inherit;
-  background-color: inherit;
-  border-bottom-color: inherit;
-  font-size: 1rem;
-  padding: 0;
-  text-decoration: underline;
-}
 
 #booked {
   background-color: var(--grey);
