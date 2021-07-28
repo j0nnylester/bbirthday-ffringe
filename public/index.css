@@ -322,7 +322,8 @@ footer {
     bottom: 0;
   }
 
-  #food-list:first-child {
+  #food-list:first-child,
+  #venue-list:first-child {
     margin-top: -2rem;
   }
 
