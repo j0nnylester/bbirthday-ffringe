@@ -1,0 +1,26 @@
+{
+  "short_name": "bbirthday ffringe",
+  "name": "bbirthday ffringe",
+  "icons": [
+    {
+      "src": "./bbff_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./bbff_128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./bbff_mask.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./whatson.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
+}
