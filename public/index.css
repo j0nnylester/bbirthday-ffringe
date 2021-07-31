@@ -215,7 +215,7 @@ footer {
 
 #pages {
   width: 100vw;
-  height: 4rem;
+  height: 5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -264,6 +264,7 @@ footer {
   flex-direction: column;
   align-items: center;
   min-width: 4rem;
+  margin-bottom: 1rem;
 }
 
 .nav-link > svg {
@@ -284,7 +285,7 @@ footer {
   }
 
   main {
-    margin-top: 9rem;
+    margin-top: 9.5rem;
     margin-bottom: 5rem;
   }
 
