@@ -56,6 +56,7 @@ const changeActive = (day) => {
   root.style.setProperty('--active', days[day].color);
   document.querySelector(`#${days[day].day}-tab`).classList.add("active");
   document.querySelector(`#${days[day].day}-whatson`).classList.add("active");
+  document.querySelector(`#${days[day].day}-whatson`).scrollTop = 0;
 };
 
 const setThemeOnLoad = () => {

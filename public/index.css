@@ -22,21 +22,23 @@ body {
   -moz-osx-font-smoothing: grayscale; 
   scroll-behavior: smooth;
   background-color: var(--grey);
-  transition: background-color var(--transition) linear
+  transition: background-color var(--transition) linear;
 }
 
 body[color-scheme='light'] {
   background-color: var(--white);
-  border-bottom-color: var(--white);
   color: var(--black);
   fill: var(--black);
+  --bg: var(--white);
+  --fg: var(--black);
 }
 
 body[color-scheme='dark'] {
   background-color: var(--black);
-  border-bottom-color: var(--black);
   color: var(--white);
   fill: var(--white);
+  --fg: var(--white);
+  --bg: var(--black);
 }
 
 header {
@@ -45,7 +47,7 @@ header {
   color: inherit;
 }
 
-h1, h2 {
+h1 {
   margin-left: 1rem;
 }
 
@@ -65,9 +67,12 @@ table {
   width: 80%;
 }
 
-td, th {
-  text-align: left;
+td {
   padding: 0 0.5rem;
+}
+
+th {
+  text-align: center;
 }
 
 tr:nth-child(even),
@@ -174,7 +179,6 @@ footer {
   border: none;
   color: inherit;
   background-color: inherit;
-  border-bottom-color: inherit;
   font-size: 1rem;
 }
 
@@ -184,12 +188,13 @@ footer {
 
 .whatson {
   display: none;
+  flex-direction: column;
 }
 
 .whatson.active {
   margin-top: 0.5rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
 .tcell {
@@ -210,7 +215,7 @@ footer {
 }
 
 #about {
-  margin: 0 4em;
+  margin: 0 9em;
 }
 
 #pages {
@@ -274,8 +279,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  h1,
-  h2 {
+  h1{
     margin: 0.5rem 1rem;
   }
 
@@ -284,9 +288,13 @@ footer {
     height: min-content;
   }
 
+  td > h2 {
+    margin-left: 0.5rem;
+  }
+
   main {
-    margin-top: 9.5rem;
-    margin-bottom: 5rem;
+    margin-top: 7rem;
+    margin-bottom: 6rem;
   }
 
   ul {
@@ -294,10 +302,15 @@ footer {
     height: min-content;
   }
 
+  ul > h2 {
+    margin: -2rem 0 0 1.5rem;
+  }
+
   #header {
     flex-direction: column;
     justify-content: center;
     position: fixed;
+    height: 4rem;
   }
 
   #theme-button {
@@ -307,7 +320,7 @@ footer {
 
   #days {
     position: fixed;
-    top: 6rem;
+    top: 4rem;
   }
 
   .header {
@@ -315,7 +328,7 @@ footer {
   }
 
   #about {
-    margin: 0 2em;
+    margin: 1rem 2rem;
   }
 
   #pages {
@@ -330,6 +343,15 @@ footer {
 
   .footer {
     box-shadow: 0px -2px 10px 2px rgba(128,128,128,0.15);
+  }
+
+  .nav-link {
+    text-decoration: none;
+    border-bottom: 0.25rem solid transparent;
+  }
+
+  .nav-link.active {
+    border-bottom: 0.25rem solid var(--fg);
   }
 
   .nav-link > svg {
