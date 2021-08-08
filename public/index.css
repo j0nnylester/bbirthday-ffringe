@@ -57,14 +57,15 @@ h1 > a {
 }
 
 main {
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin: 0 auto;
   min-height: 33vh;
+  width: 66%;
+  
 }
 
 table {
   table-layout: fixed;
-  width: 80%;
+  width: 100%;
 }
 
 td {
@@ -87,7 +88,6 @@ a {
 
 ul {
   margin: 0 auto;
-  width: 66%;
   list-style: none;
   padding: 0;
 }
@@ -214,10 +214,6 @@ footer {
   text-align: left;
 }
 
-#about {
-  margin: 0 9em;
-}
-
 #pages {
   width: 100vw;
   height: 5rem;
@@ -260,6 +256,10 @@ footer {
   transform: rotateZ(-5deg);
 }
 
+ #about {
+    margin: 1rem;
+  }
+
 .footer {
   box-shadow: none;
 }
@@ -283,11 +283,6 @@ footer {
     margin: 0.5rem 1rem;
   }
 
-  table {
-    width: 100%;
-    height: min-content;
-  }
-
   td > h2 {
     margin-left: 0.5rem;
   }
@@ -295,15 +290,16 @@ footer {
   main {
     margin-top: 7rem;
     margin-bottom: 6rem;
+    width: 100%;
+  }
+
+   main > h2 {
+    margin: -2rem 0 0 1rem;
   }
 
   ul {
     width: 100%; 
     height: min-content;
-  }
-
-  ul > h2 {
-    margin: -2rem 0 0 1.5rem;
   }
 
   #header {
