@@ -45,6 +45,7 @@ header {
   position: relative;
   background-color: inherit;
   color: inherit;
+  z-index: 70;
 }
 
 h1 {
@@ -115,6 +116,7 @@ li > a {
 footer {
   background-color: inherit;
   color: inherit;
+  z-index: 70;
 }
 
 #header {
@@ -254,6 +256,13 @@ footer {
   padding: 0.25rem;
   align-self: flex-end;
   transform: rotateZ(-5deg);
+  width: fit-content;
+}
+
+li > #booked {
+  position: relative;
+  margin-left: 1.25rem;
+
 }
 
  #about {
