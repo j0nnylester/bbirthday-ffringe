@@ -14,18 +14,18 @@ self.addEventListener('install', function (event) {
           './venues.html',
           './whatson.html'
         ]
-      );
+      )
     })
-  );
-});
+  )
+})
 
 self.addEventListener('fetch', function (event) {
   event.respondWith(
     fetch(event.request).catch(function () {
-      return caches.match(event.request);
+      return caches.match(event.request)
     })
-  );
-});
+  )
+})
 
 self.addEventListener('activate', function (event) {
   event.waitUntil(
@@ -34,10 +34,10 @@ self.addEventListener('activate', function (event) {
         cacheNames.filter(function (name) {
           return name !== cacheName
         }).map(function (cacheName) {
-          console.log('Deleting expired cache:', cacheName);
-          return caches.delete(cacheName);
+          console.log('Deleting expired cache:', cacheName)
+          return caches.delete(cacheName)
         })
-      );
+      )
     })
-  );
-});
+  )
+})
