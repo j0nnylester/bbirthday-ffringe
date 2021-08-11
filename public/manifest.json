@@ -1,6 +1,6 @@
 {
-  "short_name": "bbirthday ffringe",
-  "name": "bbirthday ffringe",
+  "background_color": "#000000",
+  "display": "standalone",
   "icons": [
     {
       "src": "./bbff_512.png",
@@ -19,8 +19,50 @@
       "purpose": "any maskable"
     }
   ],
+  "name": "bbirthday ffringe",
   "start_url": "./whatson.html",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#000000"
+  "short_name": "bbirthday ffringe",
+  "shortcuts": [
+    {
+      "name": "what's on",
+      "url": "./whatson.html",
+      "icons": [
+        {
+          "src": "./whatson.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "venues",
+      "url": "./venues.html",
+      "icons": [
+        {
+          "src": "./venues.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "food",
+      "url": "./food.html",
+      "icons": [
+        {
+          "src": "./food.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "abou",
+      "url": "./about.html",
+      "icons": [
+        {
+          "src": "./about.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "theme_color": "#000000"
 }

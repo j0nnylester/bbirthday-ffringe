@@ -1,3 +1,4 @@
 *.local
 dist
+dist-ssr
 node_modules
