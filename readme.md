@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dacf1161-c225-4241-a3eb-868aa51761a4/deploy-status)](https://app.netlify.com/sites/bbirthday-ffringe/deploys)

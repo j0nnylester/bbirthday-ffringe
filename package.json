@@ -1,0 +1,17 @@
+{
+  "name": "bbirthday-ffringe",
+  "version": "1.0.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j0nnylester/bbirthday-ffringe.git"
+  },
+  "keywords": [],
+  "author": "j0nnylester",
+  "bugs": {
+    "url": "https://github.com/j0nnylester/bbirthday-ffringe/issues"
+  },
+  "homepage": "https://github.com/j0nnylester/bbirthday-ffringe#readme"
+}
