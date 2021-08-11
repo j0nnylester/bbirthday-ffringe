@@ -3,17 +3,17 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "./bbff_512.png",
+      "src": "./images/bbff_512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "./bbff_128.png",
+      "src": "./images/bbff_128.png",
       "type": "image/png",
       "sizes": "128x128"
     },
     {
-      "src": "./bbff_mask.png",
+      "src": "./images/bbff_mask.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -28,7 +28,7 @@
       "url": "./whatson.html",
       "icons": [
         {
-          "src": "./whatson.png",
+          "src": "./images/whatson.png",
           "sizes": "96x96"
         }
       ]
@@ -38,7 +38,7 @@
       "url": "./venues.html",
       "icons": [
         {
-          "src": "./venues.png",
+          "src": "./images/venues.png",
           "sizes": "96x96"
         }
       ]
@@ -48,17 +48,17 @@
       "url": "./food.html",
       "icons": [
         {
-          "src": "./food.png",
+          "src": "./images/food.png",
           "sizes": "96x96"
         }
       ]
     },
     {
-      "name": "abou",
+      "name": "about",
       "url": "./about.html",
       "icons": [
         {
-          "src": "./about.png",
+          "src": "./images/about.png",
           "sizes": "96x96"
         }
       ]
