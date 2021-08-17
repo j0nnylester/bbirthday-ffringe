@@ -2,7 +2,7 @@
     --black: #0a0a0a;
     --white: #f5f5f5;
     --active: #f5f5f5;
-    --transition: 0.0s;
+    --transition: 0.2s;
 }
 
 body, html {
